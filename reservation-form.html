@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="css/bootstrap-bootswatch-theme-lumen.min.css"
     />
+    <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/bootstrap-datepicker3.min.css" />
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -405,123 +406,31 @@
               name="roomtype_max"
               value="3"
             />
-            <div class="row">
+            <input
+              type="hidden"
+              id="roomtype_initial"
+              name="roomtype_initial"
+              value="1"
+            />
+            <div class="row roomtype template" id="roomtype_template">
               <label class="control-label col-xs-2">Room Type</label>
 
               <div class="col-xs-1"></div>
               <label
-                id="roomtype1button"
+                id="roomtypebutton"
                 class="btn btn-primary col-xs-3"
                 style="text-align: left"
               >
-                <input type="radio" id="roomtype1" name="roomtype" value="1" />
-                &nbsp; Concert Hall
+                <input type="radio" id="roomtype" name="roomtype" value="" />
               </label>
               <p class="control-label col-xs-3" style="text-align: left">
-                <a target="_blank" href="http://localhost/concerthall"
-                  >show description</a
-                >
+                <a target="_blank" href="">show description</a>
               </p>
-              <p class="control-label col-xs-1" id="roomtype1price">unknown*</p>
+              <p class="control-label col-xs-1" id="roomtypeprice">unknown*</p>
               <p class="control-label col-xs-2">per night / per room</p>
-              <input
-                type="hidden"
-                id="price1_1"
-                name="price1_1"
-                value="   84,00€"
-              />
-              <input
-                type="hidden"
-                id="price1_2"
-                name="price1_2"
-                value="   99,00€"
-              />
-              <input
-                type="hidden"
-                id="price1_3"
-                name="price1_3"
-                value="  104,00€"
-              />
-              <input
-                type="hidden"
-                id="roomtype_initial"
-                name="roomtype_initial"
-                value="1"
-              />
-            </div>
-            <div class="row" style="margin-top: 2px">
-              <div class="col-xs-2"></div>
-              <div class="col-xs-1"></div>
-              <label
-                id="roomtype2button"
-                class="btn btn-primary col-xs-3"
-                style="text-align: left"
-              >
-                <input type="radio" id="roomtype2" name="roomtype" value="2" />
-                &nbsp; Stadium
-              </label>
-              <p class="control-label col-xs-3" style="text-align: left">
-                <a target="_blank" href="http://localhost/stadium"
-                  >show description</a
-                >
-              </p>
-              <p class="control-label col-xs-1" id="roomtype2price">unknown*</p>
-              <p class="control-label col-xs-2">per night / per room</p>
-              <input
-                type="hidden"
-                id="price2_1"
-                name="price2_1"
-                value="   85,00€"
-              />
-              <input
-                type="hidden"
-                id="price2_2"
-                name="price2_2"
-                value="  100,00€"
-              />
-              <input
-                type="hidden"
-                id="price2_3"
-                name="price2_3"
-                value="  105,00€"
-              />
-            </div>
-            <div class="row" style="margin-top: 2px">
-              <div class="col-xs-2"></div>
-              <div class="col-xs-1"></div>
-              <label
-                id="roomtype3button"
-                class="btn btn-primary col-xs-3"
-                style="text-align: left"
-              >
-                <input type="radio" id="roomtype3" name="roomtype" value="3" />
-                &nbsp; Shack in the Wilderness
-              </label>
-              <p class="control-label col-xs-3" style="text-align: left">
-                <a target="_blank" href="http://localhost/shack"
-                  >show description</a
-                >
-              </p>
-              <p class="control-label col-xs-1" id="roomtype3price">unknown*</p>
-              <p class="control-label col-xs-2">per night / per room</p>
-              <input
-                type="hidden"
-                id="price3_1"
-                name="price3_1"
-                value="   14,00€"
-              />
-              <input
-                type="hidden"
-                id="price3_2"
-                name="price3_2"
-                value="   15,00€"
-              />
-              <input
-                type="hidden"
-                id="price3_3"
-                name="price3_3"
-                value="   19,00€"
-              />
+              <input type="hidden" id="price_1" name="price_1" />
+              <input type="hidden" id="price_2" name="price_2" />
+              <input type="hidden" id="price_3" name="price_3" />
             </div>
             <div class="row">
               <div class="col-xs-3"></div>
